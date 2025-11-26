@@ -1,0 +1,70 @@
+.addbook-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.addbook-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.addbook-form .form-group {
+  margin-bottom: 15px;
+}
+
+.addbook-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #374151;
+}
+
+.addbook-form input[type="text"],
+.addbook-form input[type="number"],
+.addbook-form input[type="file"],
+.addbook-form textarea,
+.addbook-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.addbook-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.addbook-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.file-name {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #22c55e;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #16a34a;
+}

@@ -1,0 +1,28 @@
+.select-field-container {
+  margin-bottom: 16px;
+}
+
+.select-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151; /* gray-700 */
+  margin-bottom: 6px;
+}
+
+.select-element {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.select-element:focus {
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}

@@ -1,0 +1,122 @@
+/* Container */
+.order-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Title */
+.order-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+}
+
+/* Loading / Error / No Orders */
+.loading,
+.error,
+.no-orders {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Order Card */
+.order-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Index Badge */
+.order-index {
+  display: inline-block;
+  background-color: #6c63ff;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Order Info Grid */
+.order-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.order-info p {
+  margin: 0;
+  color: #444;
+  word-break: break-word; /* prevents overflow for emails/addresses */
+}
+
+/* Address and Products Section */
+.order-section {
+  margin-top: 12px;
+}
+
+.order-section h3 {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Product badges */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.product-badge {
+  background-color: #e0e7ff;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-info {
+    grid-template-columns: 1fr;
+  }
+  .order-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-title {
+    font-size: 20px;
+  }
+  .order-card {
+    padding: 16px;
+  }
+  .order-info p {
+    font-size: 14px;
+  }
+  .product-badge {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+}

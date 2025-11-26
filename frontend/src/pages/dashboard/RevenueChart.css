@@ -1,0 +1,31 @@
+.chart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+/* Chart title */
+.chart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937; /* gray-800 */
+  margin-bottom: 16px;
+}
+
+/* Chart wrapper */
+.chart-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  display: none; /* hidden by default on small screens */
+}
+
+/* Show chart on medium and larger screens */
+@media (min-width: 768px) {
+  .chart-wrapper {
+    display: block;
+  }
+}

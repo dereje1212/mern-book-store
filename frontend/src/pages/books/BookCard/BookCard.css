@@ -1,0 +1,80 @@
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.book-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease;
+ 
+
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.2);
+}
+
+.book-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.book-img:hover {
+  transform: scale(1.05);
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  
+}
+
+.book-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.book-desc {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.0;
+  gap: 0.5px;
+}
+
+.book-price {
+  font-weight: bold;
+  color: #0078ff;
+  gap: 0.5px;
+}
+
+.add-cart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  background-color: #0078ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.add-cart-btn:hover {
+  background-color: #005fd4;
+}

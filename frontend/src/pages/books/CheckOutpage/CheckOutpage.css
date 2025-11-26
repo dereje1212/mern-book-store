@@ -1,0 +1,138 @@
+.checkout-sections {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-container {
+  background: #fff;
+  max-width: 950px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.checkout-header {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.checkout-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.checkout-header p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.checkout-form-container {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-header .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group.wide {
+  grid-column: span 3;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0 12px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+.checkbox-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-container label {
+  font-size: 14px;
+  color: #333;
+}
+
+.checkbox-container a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.button-container {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.button-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,113 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background: linear-gradient(135deg, #f7f9fc 0%, #eef3f7 100%);
+  overflow: hidden;
+  min-height: 500px;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner-content {
+  flex: 1;
+  padding-right: 50px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.subscribe-btn {
+  background: #2563eb;
+  color: #fff;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.subscribe-btn:hover {
+  background: #1e40af;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
+}
+
+.banner-image {
+  flex: 1;
+  text-align: right;
+  animation: slideInRight 1s ease-out;
+}
+
+.banner-image img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.banner-image img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Animations --- */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .banner-content {
+    padding-right: 0;
+  }
+
+  .banner-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .banner-image img {
+    max-width: 90%;
+  }
+}
